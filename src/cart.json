@@ -1,0 +1,7 @@
+[
+    {"producto": "1", "descripción": "1","stock": "100", "id": "1"},
+    {"producto": "2", "descripción": "2","stock": "100", "id": "2"},
+    {"producto": "3", "descripción": "3","stock": "100", "id": "3"},
+    {"producto": "4", "descripción": "4","stock": "100", "id": "4"},
+    {"producto": "5", "descripción": "5","stock": "100", "id": "5"}
+]
