@@ -43,6 +43,8 @@ export default class ProductManager {
     }
     return product;
   }
+
+
   updateProduct(id, title, description, price, thumbnail, code, stock) {
     this.products.push({
       id: id,
