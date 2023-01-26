@@ -1,15 +1,15 @@
 
 
 [
-    {"producto": "1", "descripción": "1","stock": "100", "id": "1"},
-    {"producto": "2", "descripción": "2","stock": "100", "id": "2"},
-    {"producto": "3", "descripción": "3","stock": "100", "id": "3"},
-    {"producto": "4", "descripción": "4","stock": "100", "id": "4"},
-    {"producto": "5", "descripción": "5","stock": "100", "id": "5"},
-    {"producto": "6", "descripción": "6","stock": "100", "id": "6"},
-    {"producto": "7", "descripción": "7","stock": "100", "id": "7"},
-    {"producto": "8", "descripción": "8","stock": "100", "id": "8"},
-    {"producto": "9", "descripción": "9","stock": "100", "id": "9"},
-    {"producto": "10", "descripción": "10","stock": "100", "id": "10"}
+    {"producto": "teclado", "descripcion": "1","stock": "100", "id": "1"},
+    {"producto": "mouse", "descripcion": "2","stock": "100", "id": "2"},
+    {"producto": "monitor", "descripcion": "3","stock": "100", "id": "3"},
+    {"producto": "4", "descripcion": "4","stock": "100", "id": "4"},
+    {"producto": "5", "descripcion": "5","stock": "100", "id": "5"},
+    {"producto": "6", "descripcion": "6","stock": "100", "id": "6"},
+    {"producto": "7", "descripcion": "7","stock": "100", "id": "7"},
+    {"producto": "8", "descripcion": "8","stock": "100", "id": "8"},
+    {"producto": "9", "descripcion": "9","stock": "100", "id": "9"},
+    {"producto": "10", "descripcion": "10","stock": "100", "id": "10"}
 
 ]

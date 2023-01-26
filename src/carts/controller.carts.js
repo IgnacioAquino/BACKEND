@@ -7,7 +7,7 @@ const productManager = new ProductManager();
 const router = Router();
 const path = "./cart.json";
 
-router.post("/cart", (req, res) => {
+router.post("/", (req, res) => {
   const newCart = {
     id: productManager.generateUniqueId(),
     items: req.body,
@@ -35,12 +35,12 @@ router.post("/cart", (req, res) => {
   });
 });
 
-router.get("/cart", async (req, res) => {
+router.get("/", async (req, res) => {
   const arrayCarritos = await Carrito.getCarts();
   res.status(200).json(arrayCarritos);
 });
 
-router.get("/cart/:cId", async (req, res) => {
+router.get("/:cId", async (req, res) => {
   const itemFinded = await Carrito.getCartsById(req.params.cId);
 
   if (itemFinded.length == 0) {
@@ -53,7 +53,7 @@ router.get("/cart/:cId", async (req, res) => {
 });
 
 
-router.post("/cart/:cid/product/:pid", async (req, res) => {
+router.post("/carts/:cid/products/:pid", async (req, res) => {
     try {
       
       let data = JSON.parse(fs.readFileSync('cart.json'));

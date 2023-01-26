@@ -1,0 +1,20 @@
+<div>
+    
+    <h1>Hola {{user.name}}, bienvenido!</h1>
+    {{#if isAdmin}}
+        {{#each productos}}
+            <div>
+                <p>Producto: {{this.producto}} </p>
+                <p>Descripcion: {{this.descripcion}} </p>
+                <p>Stock: {{this.stock}} </p>
+                <p>ID: {{this.id}} </p>
+            </div>
+        {{/each}}
+    {{else}}
+        <p>No tienes permiso para ver los productos</p>
+    {{/if}}
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
