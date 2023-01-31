@@ -7,7 +7,7 @@ const router = Router();
 
 // GET
 
-router.get("/", (req,res)=>{
+/*router.get("/", (req,res)=>{
     const productos = productManager.getProducts();
     const user = 
         {
@@ -21,14 +21,14 @@ router.get("/", (req,res)=>{
         isAdmin: user.role === 'admin',
         productos
     })
-});
+});*/
 
 
-/*router.get("/", (req,res)=>{
+router.get("/", (req,res)=>{
     const limit = req.query.limit;
     const lastProducts = productManager.getProducts().slice(-limit);
     res.json(lastProducts);
-});*/
+});
 
 
 router.get("/:pId", (req,res)=>{
@@ -46,8 +46,10 @@ router.get("/:pId", (req,res)=>{
 // POST
 
 router.post("/", (req,res)=>{
-    const { producto, descripcion, stock, id } = req.body
     let arrayProductos = productManager.getProducts();
+    let id = productManager.generateUniqueId();
+    const { producto, descripcion, stock } = req.body
+    
     arrayProductos.push({ producto, descripcion, stock, id })
     res.status(201).json({message: "producto agregado"});
 });
